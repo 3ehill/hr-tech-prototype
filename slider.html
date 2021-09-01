@@ -2,37 +2,47 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="./src/dist/css/tiny-slider.css" />
     <link rel="stylesheet" href="./src/styles.css" />
-    <link rel="stylesheet" href="./src/video.css" />
+    <link rel="stylesheet" href="./src/slider.css" />
 </head>
 
 <body>
-    <div id="video" class="container-fluid main">
+    <div id="slider" class="container-fluid main">
         <div class="pt-3 mx-5">
             <div class="nav">
                 <img class="img-fluid" alt="alight logo" src="./src/images/alight.png" />
             </div>
             <div class="content mb-3">
-                <iframe width="1100" height="620">
-                </iframe>
+                <div class="my-slider">
+                    <div class="slide">test 1</div>
+                    <div class="slide">test 2</div>
+                    <div class="slide">test 3</div>
+                    <div class="slide">test 4</div>
+                </div>
+                <div id="controls-container">
+                    <div id="prev">
+                        <img src="./src/images/prev.png">
+                    </div>
+                    <div id="next">
+                        <img src="./src/images/next.png">
+                    </div>
+                </div>
+
             </div>
         </div>
+        
         <div class="footer">
             <div class="top">
                 <div class="link-row container">
-                    <a href="#">ProServ Overview</a>
-                    <a href="#">AMSaas</a>
-                    <a href="#">Deployment Accelerator</a>
-                    <a href="#">Diagnostics</a>
-                    <a href="#">ProServ Customer Testimonial</a>
                 </div>
             </div>
             <div class="bottom">
                 <div class="link-row container">
-                    <a href="file:///C:/Users/EricaHill/Documents/GitHub/hr-tech-prototype/index.html" class="square">
+                    <a href="#" class="square">
                         <img class="img-fluid" src="./src/images/Home.png" height="56" width="62"/>
                     </a>
-                    <a href="file:///C:/Users/EricaHill/Documents/GitHub/hr-tech-prototype/slider.html" class="square">
+                    <a href="#" class="square">
                         <img class="img-fluid" src="./src/images/TeamDependents.png" height="60" width="70"/>
                     </a>
                     <a href="#" class="square">
@@ -57,5 +67,20 @@
 </body>
 <script type="text/javascript" src="./src/dist/js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="./src/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./src/dist/js/tiny-slider.js"></script>
+
+<script>
+    var slider = tns({
+      container: '.my-slider',
+      autoplay: false,
+      touch: true,
+      center: true,
+      loop: true,
+      controlsPosition: 'bottom',
+      controlsContainer: '#controls-container',
+      prevButton: '#prev',
+      nextButton: '#next'      
+    });
+  </script>
 
 </html>

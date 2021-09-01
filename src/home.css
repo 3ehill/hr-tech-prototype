@@ -1,0 +1,35 @@
+/* Home Square Landing */
+#home .squares{
+    display:flex;
+    flex-flow:row;
+    flex-wrap: wrap;
+}
+#home .squares .square {
+    height: 400px;
+    width: 500px;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#home .squares .square .square-item{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home .squares a{
+    font-size: 32px;
+    color: white;
+}
+#home .squares a:hover{
+    color: rgba(252, 238, 33, 1);
+    text-decoration: none;
+}
+#home .squares h2{
+    margin-top: 1rem;
+}

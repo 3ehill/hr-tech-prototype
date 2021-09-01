@@ -1,5 +1,43 @@
 @import './dist/css/bootstrap.min.css';
 
+@font-face {
+    font-family: "FSThriveElliot";
+    src: url("fonts/FSThriveElliot-Regular.otf") format("opentype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'FSThriveElliotBold';
+    src: url("fonts/FSThriveElliot-Bold.otf") format("opentype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'FSThriveElliotBolditalic';
+    src: url("fonts/FSThriveElliot-BoldItalic.otf") format("opentype");
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'FSThriveElliotHeavy';
+    src: url("fonts/FSThriveElliot-Heavy.otf") format("opentype");
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'FSThriveElliotItalic';
+    src: url("fonts/FSThriveElliot-Italic.otf") format("opentype");
+    font-style: italic;
+}
+@font-face {
+    font-family: 'FSThriveElliotLight';
+    src: url("fonts/FSThriveElliot-Light.otf") format("opentype");
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'FSThriveElliotLightItalic';
+    src: url("fonts/FSThriveElliot-LightItalic.otf") format("opentype");
+    font-weight: 300;
+    font-style: italic;
+}
+
 .main {
     height: 100%;
     width: 100%;
@@ -9,6 +47,7 @@
     background-image: url(./images/alight-bg.jpg);
     background-repeat: no-repeat;
     padding: 0;
+    font-family: "FSThriveElliot";
 }
 .nav img{
     width: 175px;
@@ -18,78 +57,51 @@
     justify-content: center;
     align-items: center;
 }
-/* Home Square Landing */
-#home .squares{
-    display:flex;
-    flex-flow:row;
-    flex-wrap: wrap;
-}
-#home .squares .square {
-    height: 400px;
-    width: 500px;
-    display: flex;
-    flex-flow: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-#home .squares .square .square-item{
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 12px;
-    height: 300px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#home .squares a{
-    font-size: 32px;
-    color: white;
-}
-#home .squares a:hover{
-    color: rgba(252, 238, 33, 1);
-    text-decoration: none;
-}
-#home .squares h2{
-    margin-top: 1rem;
-}
-/* Video Landing Styling */
-#video-landing .footer{
+
+/* Non-Homepage Footer */
+.footer{
     height: 224px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
-#video-landing .footer .top{
+.footer .top{
     background: rgba(10, 32, 41, 0.3);
     height: 80px;
 }
-#video-landing .footer .top .link-row{
+.footer .top .link-row{
     display: flex;
     flex-flow: row;
     justify-content: space-around;
     align-items: center;
     height: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
 }
-#video-landing .footer .top a {
+.footer .top a {
     color:white;
     text-decoration: underline;
-    font-family: 'FS Thrive Elliot';
+    font-family: 'FSThriveElliot';
     font-size: 22px;
 }
-#video-landing .footer .top a:hover {
+.footer .top a:hover {
     color:rgba(255, 242, 0, 1);
     font-weight: 700;
 }
-#video-landing .footer .bottom{
+.footer .bottom{
     height:160px;
     background-color: rgba(10, 32, 41, 0.9);
 }
-#video-landing .footer .bottom .link-row{
+.footer .bottom .link-row{
     display: flex;
     flex-flow: row;
     justify-content: space-around;
     align-items: center;
     height: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
 }
-#video-landing .footer .bottom .square{
+.footer .bottom .square{
     background-color:rgba(255, 255, 255, 0.2);
     border-radius: 12px;
     height: 95px;

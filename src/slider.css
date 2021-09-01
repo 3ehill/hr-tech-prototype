@@ -1,0 +1,38 @@
+.tns-nav{
+    display: none;
+}
+.tns-outer{
+    width: 1500px;
+}
+.slide.tns-item{
+    height: 500px;
+}
+#slider .content{
+    flex-flow:column;
+    height: 600px;
+}
+#controls-container{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    height: inherit;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+}
+#prev,
+#next{
+    height: 100%;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+}
+#prev img{
+    position: fixed;
+    left: 20px;
+}
+
+#next img{
+    position: fixed;
+    right: 20px;
+}
