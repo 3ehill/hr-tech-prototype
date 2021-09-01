@@ -49,6 +49,9 @@
     padding: 0;
     font-family: "FSThriveElliot";
 }
+.nav{
+    margin: 3rem 4rem;
+}
 .nav img{
     width: 175px;
 }
@@ -89,7 +92,7 @@
     font-weight: 700;
 }
 .footer .bottom{
-    height:160px;
+    height:166px;
     background-color: rgba(10, 32, 41, 0.9);
 }
 .footer .bottom .link-row{

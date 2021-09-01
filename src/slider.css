@@ -36,3 +36,9 @@
     position: fixed;
     right: 20px;
 }
+.slide div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}

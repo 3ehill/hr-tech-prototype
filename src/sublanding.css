@@ -1,0 +1,42 @@
+.content{
+    width: 1500px;
+}
+.squares{
+    display:flex;
+    flex-flow:row;
+    flex-wrap: wrap;
+}
+.squares .square {
+
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.squares .square .square-item{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    height: 255px;
+    width: 425px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.squares a{
+    font-size: 32px;
+    color: white;
+}
+.squares a:hover{
+    color: rgba(252, 238, 33, 1);
+    text-decoration: none;
+}
+.squares h2{
+    margin-top: 1rem;
+}
+.footer{
+    height: 166px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
