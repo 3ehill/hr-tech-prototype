@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./src/dist/css/tiny-slider.css" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <link rel="stylesheet" href="./src/slider.css" />
+</head>
+
+<body>
+    <div id="slider" class="container-fluid main">
+        <div class="nav">
+            <img class="img-fluid" alt="alight logo" src="./src/images/alight.png" />
+        </div>
+        <div class="pt-3 mx-5">
+            <div class="content mb-3">
+                <div class="my-slider">
+                    <div class="slide">
+                        <div>
+                            <img src="./src/images/slides/wealth-solutions/Slide1.png"/>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div>
+                            <img src="./src/images/slides/wealth-solutions/Slide2.png"/>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div>
+                            <img src="./src/images/slides/wealth-solutions/Slide3.png"/>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div>
+                            <img src="./src/images/slides/wealth-solutions/Slide4.png"/>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div>
+                            <img src="./src/images/slides/wealth-solutions/Slide5.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div id="controls-container">
+                    <div id="prev">
+                        <img src="./src/images/prev.png">
+                    </div>
+                    <div id="next">
+                        <img src="./src/images/next.png">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="top">
+                <div class="link-row container">
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="link-row container">
+                    <a href="./index.html" class="square">
+                        <img class="img-fluid" src="./src/images/Home.png" height="56" width="62"/>
+                    </a>
+                    <a href="./video-landing.html" class="square">
+                        <img class="img-fluid" src="./src/images/TeamDependents.png" height="60" width="70"/>
+                    </a>
+                    <a href="./sublanding.html" class="square">
+                        <img class="img-fluid" src="./src/images/Health.png" height="49" width="60"/>
+                    </a>
+                    <a href="#" class="square">
+                        <img class="img-fluid" src="./src/images/MoneyCost.png" height="64" width="49"/>
+                    </a>
+                    <a href="#" class="square">
+                        <img class="img-fluid" src="./src/images/Payroll.png" height="55" width="60"/>
+                    </a>
+                    <a href="#" class="square">
+                        <img class="img-fluid" src="./src/images/CloudGear.png" height="54" width="60"/>
+                    </a>
+                    <a href="#" class="square">
+                        <img class="img-fluid" src="./src/images/Benefits.png" height="53" width="60"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="./src/dist/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="./src/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./src/dist/js/tiny-slider.js"></script>
+
+<script>
+    var slider = tns({
+      container: '.my-slider',
+      autoplay: false,
+      touch: true,
+      center: true,
+      loop: true,
+      controlsPosition: 'bottom',
+      controlsContainer: '#controls-container',
+      prevButton: '#prev',
+      nextButton: '#next'      
+    });
+  </script>
+
+</html>

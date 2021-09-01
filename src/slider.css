@@ -42,3 +42,7 @@
     align-items: center;
     height: inherit;
 }
+.slide img{
+    height: inherit;
+    width: inherit;
+}
