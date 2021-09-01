@@ -1,0 +1,100 @@
+@import './dist/css/bootstrap.min.css';
+
+.main {
+    height: 100%;
+    width: 100%;
+    max-width: 100vw;
+    max-height: 100vh;
+    position: fixed;
+    background-image: url(./images/alight-bg.jpg);
+    background-repeat: no-repeat;
+    padding: 0;
+}
+.nav img{
+    width: 175px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Home Square Landing */
+#home .squares{
+    display:flex;
+    flex-flow:row;
+    flex-wrap: wrap;
+}
+#home .squares .square {
+    height: 400px;
+    width: 500px;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#home .squares .square .square-item{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home .squares a{
+    font-size: 32px;
+    color: white;
+}
+#home .squares a:hover{
+    color: rgba(252, 238, 33, 1);
+    text-decoration: none;
+}
+#home .squares h2{
+    margin-top: 1rem;
+}
+/* Video Landing Styling */
+#video-landing .footer{
+    height: 224px;
+}
+#video-landing .footer .top{
+    background: rgba(10, 32, 41, 0.3);
+    height: 80px;
+}
+#video-landing .footer .top .link-row{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+#video-landing .footer .top a {
+    color:white;
+    text-decoration: underline;
+    font-family: 'FS Thrive Elliot';
+    font-size: 22px;
+}
+#video-landing .footer .top a:hover {
+    color:rgba(255, 242, 0, 1);
+    font-weight: 700;
+}
+#video-landing .footer .bottom{
+    height:160px;
+    background-color: rgba(10, 32, 41, 0.9);
+}
+#video-landing .footer .bottom .link-row{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+#video-landing .footer .bottom .square{
+    background-color:rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    height: 95px;
+    width: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
