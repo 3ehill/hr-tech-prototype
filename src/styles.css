@@ -60,7 +60,9 @@
     justify-content: center;
     align-items: center;
 }
-
+.font-yellow{
+    color: rgba(255, 242, 0, 1) !important;
+}
 /* Non-Homepage Footer */
 .footer{
     height: 224px;
