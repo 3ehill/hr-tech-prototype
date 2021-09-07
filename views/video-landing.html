@@ -13,7 +13,7 @@
         </div>
         <div class="pt-3 mx-5">
             <div class="content mb-3">
-                <video id="vid" width="1100" controls height="620"  poster="../src/images/fallback.png">
+                <video id="vid" width="1100" controls height="620"  poster="../src/images/video-fallback.png" onclick="this.paused?this.play():this.pause();">
                     <source src="../src/images/AlightOverview_720p.mp4" type="video/mp4">
                     Sorry, your browser doesn't support embedded videos.
                 </video>
@@ -60,4 +60,16 @@
 
 <script type="text/javascript" src="../src/dist/js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="../src/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    let container = document.getElementById('video');
+    container.addEventListener('click', function(){
+        console.log("here");
+    }, false);
+
+    if (document.readyState === "complete") { 
+        if(elevent.events.Initalized){
+            alert("put your stuff here");
+        }
+    }
+</script>
 </html>

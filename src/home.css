@@ -5,12 +5,12 @@
     flex-wrap: wrap;
 }
 #home .squares .square {
-    height: 400px;
-    width: 500px;
+    /* height: 400px;
+    width: 500px; */
     display: flex;
     flex-flow: column;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
     align-items: center;
 }
 #home .squares .square .square-item{
@@ -21,6 +21,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 85%;
+    padding: 20px 0px;
 }
 #home .squares a{
     font-size: 32px;

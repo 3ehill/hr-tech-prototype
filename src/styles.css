@@ -48,9 +48,19 @@
     background-repeat: no-repeat;
     padding: 0;
     font-family: "FSThriveElliot";
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.main.main-home {
+    display:block;
+}
+.main.main-sublanding {
+    display:flex;
 }
 .nav{
-    margin: 3rem 4rem;
+    margin: 2rem 4rem;
+    max-height: 5vh;
 }
 .nav img{
     width: 175px;
@@ -64,15 +74,9 @@
     color: rgba(255, 242, 0, 1) !important;
 }
 /* Non-Homepage Footer */
-.footer{
-    height: 224px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
 .footer .top{
     background: rgba(10, 32, 41, 0.3);
-    height: 80px;
+    padding: 25px 0;
 }
 .footer .top .link-row{
     display: flex;
@@ -94,8 +98,10 @@
     font-weight: 700;
 }
 .footer .bottom{
-    height:166px;
-    background-color: rgba(10, 32, 41, 0.9);
+    height: auto;
+    background-color: #0a2029;
+    display: flex;
+    padding: 1.5rem 0;
 }
 .footer .bottom .link-row{
     display: flex;
