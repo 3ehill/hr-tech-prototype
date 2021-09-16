@@ -37,3 +37,10 @@
 .footer{
 
 }
+#solutionsDemonstrations h2{
+    font-size:1.4rem;
+    margin-bottom: 2rem;
+}
+#solutionsDemonstrations .square-item{
+    width: 300px;
+}
